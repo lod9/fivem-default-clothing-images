@@ -1,16 +1,16 @@
 # fivem-default-clothing-images
 
-GTA V freemode ped'lerinin (`mp_m_freemode_01` / `mp_f_freemode_01`) varsayılan
-kıyafet ve aksesuarlarının greenscreen render'ları.
+Greenscreen renders of the default
+clothing and accessories for GTA V Freemode NPCs (`mp_m_freemode_01` / `mp_f_freemode_01`).
 
-- 700×700 PNG, arka plan saydam
-- Dosya adı: `<cinsiyet>_<component>_<drawable>.png`
-  - `male_11_422.png` → erkek, component 11 (Top), drawable 422
-  - prop'larda: `<cinsiyet>_prop_<component>_<drawable>.png`
+- 700×700 PNG, transparent background
+- File name: `<gender>_<component>_<drawable>.png`
+  - `male_11_422.png` → male, component 11 (Top), drawable 422
+  - For props: `<gender>_prop_<component>_<drawable>.png`
 
-## Component numaraları
+## Component Numbers
 
-| id | parça | id | parça |
+| id | part | id | part |
 |---|---|---|---|
 | 1 | Mask | 8 | Undershirt |
 | 3 | Hands / Arms | 9 | Body Armor |
@@ -23,14 +23,13 @@ kıyafet ve aksesuarlarının greenscreen render'ları.
 | | | 6 | Watch |
 | | | 7 | Bracelet |
 
-## Nasıl üretildi
+## How It Was Created
 
-[fivem-greenscreener](https://github.com/Bentix-cs/fivem-greenscreener) (GPL-3.0)
-tabanlı bir araçla, yeşil zemin önünde tek tek çekilip ortadan 700×700 kırpılarak.
+Using a tool based on [fivem-greenscreener](https://github.com/Bentix-cs/fivem-greenscreener) (GPL-3.0),
+each item was photographed individually against a green screen and cropped to 700×700.
 
-## Lisans / kullanım
+## License / Usage
 
-Görseller Rockstar Games'e ait GTA V oyun varlıklarının render'larıdır. Kod
-lisansı görsellerin telif durumunu değiştirmez. Kendi sunucunda envanter /
-kıyafet mağazası arayüzünde kullanabilirsin; ticari dağıtımdan önce hakları
-kontrol et.
+The images are renders of GTA V game assets owned by Rockstar Games. The code
+license does not alter the copyright status of the images. You may use them on your own server in the inventory /
+clothing store interface; verify the rights before commercial distribution.
