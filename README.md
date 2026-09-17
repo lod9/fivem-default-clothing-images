@@ -1,35 +1,55 @@
-# fivem-default-clothing-images
+# FiveM Default Clothing Images
 
-Greenscreen renders of the default
-clothing and accessories for GTA V Freemode NPCs (`mp_m_freemode_01` / `mp_f_freemode_01`).
+A snapshot of the image files supplied with **v0id Studio**, published in the `clothing/` directory. The files are copied from the source image folder with their original names and contents.
 
-- 700×700 PNG, transparent background
-- File name: `<gender>_<component>_<drawable>.png`
-  - `male_11_422.png` → male, component 11 (Top), drawable 422
-  - For props: `<gender>_prop_<component>_<drawable>.png`
+## Contents
 
-## Component Numbers
+- Freemode clothing and accessory renders for male and female characters
+- Component (`c`) and prop (`p`) images
+- The source folder's additional image and placeholder files, preserved as supplied
 
-| id | part | id | part |
-|---|---|---|---|
-| 1 | Mask | 8 | Undershirt |
-| 3 | Hands / Arms | 9 | Body Armor |
-| 4 | Legs | 11 | Top |
-| 5 | Bag | | |
-| 6 | Shoes | | **Props** |
-| 7 | Accessory | 0 | Hat |
-| | | 1 | Glasses |
-| | | 2 | Ears |
-| | | 6 | Watch |
-| | | 7 | Bracelet |
+The collection contains both PNG and WebP files. Image dimensions and transparency may vary by source file; consumers should inspect the image rather than assume a fixed canvas size.
 
-## How It Was Created
+## File names
 
-Using a tool based on [fivem-greenscreener](https://github.com/Bentix-cs/fivem-greenscreener) (GPL-3.0),
-each item was photographed individually against a green screen and cropped to 700×700.
+Clothing files use this pattern:
 
-## License / Usage
+```text
+<gender>_<type><id>_<drawable>_<texture>.png
+```
 
-The images are renders of GTA V game assets owned by Rockstar Games. The code
-license does not alter the copyright status of the images. You may use them on your own server in the inventory /
-clothing store interface; verify the rights before commercial distribution.
+- `gender`: `male` or `female`
+- `type`: `c` for a component or `p` for a prop
+- `id`: component or prop slot number
+- `drawable`: drawable variation
+- `texture`: texture variation
+
+Examples:
+
+- `male_c11_522_0.png` — male component slot 11, drawable 522, texture 0
+- `female_p0_14_0.png` — female prop slot 0, drawable 14, texture 0
+
+## Component slots
+
+| ID | Component |
+| ---: | --- |
+| 1 | Mask |
+| 3 | Arms / hands |
+| 4 | Legs |
+| 5 | Bags |
+| 6 | Shoes |
+| 7 | Accessories |
+| 8 | Undershirts |
+| 9 | Body armor |
+| 10 | Decals |
+| 11 | Tops |
+
+Common prop slots include `p0` hats, `p1` glasses, `p2` ears, `p6` watches, and `p7` bracelets.
+
+## Source and updates
+
+The source for this snapshot is `v0id-studio/data/images`. When the source image set changes, the `clothing/` directory should be replaced with that complete source directory so filenames and file contents stay in sync.
+
+## Usage and rights
+
+These images depict Grand Theft Auto V assets owned by Rockstar Games. Their presence in this repository does not grant rights to the underlying game assets. Check the applicable rights and terms before redistribution or commercial use.
